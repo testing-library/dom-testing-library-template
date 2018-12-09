@@ -1,0 +1,29 @@
+{
+  "name": "dom-testing-library-template",
+  "version": "1.0.0",
+  "description": "Template for dom-testing-library bug reproduction",
+  "license": "MIT",
+  "author": "alexkrolick",
+  "main": "src/index.js",
+  "devDependencies": {
+    "babel-preset-react-app": "^6.1.0",
+    "dom-testing-library": "^3.13.0",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.0.0",
+    "kcd-scripts": "^0.47.0",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-testing-library": "^5.3.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}
