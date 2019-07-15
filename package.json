@@ -7,13 +7,12 @@
   "main": "src/index.js",
   "devDependencies": {
     "babel-preset-react-app": "^6.1.0",
-    "dom-testing-library": "^3.13.0",
-    "jest": "^23.6.0",
-    "jest-dom": "^3.0.0",
-    "kcd-scripts": "^0.47.0",
-    "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2",
-    "react-testing-library": "^5.3.1"
+    "dom-testing-library": "latest",
+    "jest": "latest",
+    "jest-dom": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-testing-library": "latest"
   },
   "scripts": {
     "test": "jest"
