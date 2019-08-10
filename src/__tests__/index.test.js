@@ -1,10 +1,13 @@
-import {render} from 'react-testing-library'
 import React from 'react'
-import 'jest-dom/extend-expect'
-import MyComponent from '../'
+import {render, fireEvent} from '@testing-library/react'
+import Counter from '../'
 
-it('renders greeting', () => {
-  const {container, queries} = render(<MyComponent />)
-  expect(container.firstChild).toHaveTextContent('Hello, World')
+test('increments the count', () => {
+  const {getByText} = render(<Counter />)
+  const button = getByText('0')
+  fireEvent.click(button)
+  expect(button).toHaveTextContent('1')
+  fireEvent.click(button)
+  expect(button).toHaveTextContent('2')
 })
 

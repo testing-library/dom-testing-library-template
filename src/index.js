@@ -1,5 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-export default function MyComponent() {
-  return <div>Hello, World!</div>
+function Counter() {
+  const [count, setCount] = React.useState(0)
+  const increment = () => setCount(c => c + 1)
+  return <button onClick={increment}>{count}</button>
 }
+
+export default Counter

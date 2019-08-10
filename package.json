@@ -5,24 +5,19 @@
   "license": "MIT",
   "author": "alexkrolick",
   "main": "src/index.js",
-  "devDependencies": {
-    "babel-preset-react-app": "^6.1.0",
-    "dom-testing-library": "latest",
-    "jest": "latest",
-    "jest-dom": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-testing-library": "latest"
-  },
   "scripts": {
-    "test": "jest"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
+  "dependencies": {
+    "@testing-library/dom": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "jest": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest"
   }
 }
